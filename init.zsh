@@ -25,7 +25,6 @@ unset min_zsh_version
 function pmodload {
   local -a pmodules
   local pmodule
-  local pfunction_glob='^([_.]*|prompt_*_setup|README*)(.N:t)'
 
   # $argv is overridden in the anonymous function.
   pmodules=("$argv[@]")
